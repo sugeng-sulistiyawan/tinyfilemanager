@@ -1,7 +1,7 @@
 <?php
-
 //Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
+$CONFIG = '{"lang":"id","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
+$CONFIG = '{"lang":"id","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
 /**
  * H3K - Tiny File Manager V2.6
@@ -38,7 +38,7 @@ $readonly_users = array(
 );
 
 // Global readonly, including when auth is not being used
-$global_readonly = false;
+$global_readonly = true;
 
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
@@ -64,7 +64,7 @@ $root_url = '';
 
 // Server hostname. Can set manually if wrong
 // $_SERVER['HTTP_HOST'].'/folder'
-$http_host = $_SERVER['HTTP_HOST'];
+$http_host = $_SERVER['HTTP_HOST'] . '/storage';
 
 // input encoding for iconv
 $iconv_input_encoding = 'UTF-8';
@@ -77,7 +77,7 @@ $datetime_format = 'Y-m-d H:i';
 // 'full' => show full path
 // 'relative' => show path relative to root_path
 // 'host' => show path on the host
-$path_display_mode = 'full';
+$path_display_mode = 'relative';
 
 // Allowed file extensions for create and rename files
 // e.g. 'txt,html,css,js'
