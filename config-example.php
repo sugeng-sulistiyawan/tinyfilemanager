@@ -38,7 +38,7 @@ $readonly_users = array(
 );
 
 // Global readonly, including when auth is not being used
-$global_readonly = true;
+$global_readonly = false;
 
 // user specific directories
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
