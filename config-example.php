@@ -1,6 +1,6 @@
 <?php
+
 //Default Configuration
-$CONFIG = '{"lang":"id","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 $CONFIG = '{"lang":"id","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
 /**
@@ -60,11 +60,11 @@ $default_timezone = 'Asia/Jakarta'; // UTC
 
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
-$root_url = '';
+$root_url = 'storage';
 
 // Server hostname. Can set manually if wrong
 // $_SERVER['HTTP_HOST'].'/folder'
-$http_host = $_SERVER['HTTP_HOST'] . '/storage';
+$http_host = $_SERVER['HTTP_HOST'];
 
 // input encoding for iconv
 $iconv_input_encoding = 'UTF-8';
