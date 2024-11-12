@@ -3658,12 +3658,14 @@ function fm_show_header_login()
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Web based File Manager in PHP, Manage your files efficiently and easily with Tiny File Manager">
-        <meta name="author" content="CCP Programmers">
+        <meta name="description" content="">
+        <meta name="author" content="">
         <meta name="robots" content="noindex, nofollow">
         <meta name="googlebot" content="noindex">
         <?php if ($favicon_path) {
             echo '<link rel="icon" href="' . fm_enc($favicon_path) . '" type="image/png">';
+        } else {
+            echo '<link rel="icon" sizes="512x512" href="https://sipintar.rssoedomo.com/images/icons/icon-512x512.png">';
         } ?>
         <title><?php echo fm_enc(APP_TITLE) ?></title>
         <?php print_external('pre-jsdelivr'); ?>
